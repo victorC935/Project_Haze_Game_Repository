@@ -1,0 +1,7 @@
+Format:
+Entry No, Date, Prefab being animated, Animation name
+Note: Leave a line between entries
+E.g.
+0, 09/06/18, Player, Idle
+
+Entries:
