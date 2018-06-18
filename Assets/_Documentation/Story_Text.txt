@@ -1,0 +1,1 @@
+Please create separate headers for things like dialogue, notes and menu information

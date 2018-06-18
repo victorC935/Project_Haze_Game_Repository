@@ -1,0 +1,7 @@
+Format:
+Entry No, Date, Computer spec [CPU, GPU, RAM etc], Frame rate, Quality settings, Resolution
+Note: Leave a line between entries
+E.g.
+0, 09/06/18, [i5-3337U, Intel HD 4000, 8GB DDR3], 40fps, Medium, 1366x768
+
+Entries:
