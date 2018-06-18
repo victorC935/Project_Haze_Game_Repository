@@ -6,3 +6,4 @@ E.g.
 
 Entries:
 0, 14/06/18, N, Volume sliders don't scale linearly
+1, 18/06/18, Y, While the player is holding E and runs through the door, the door does not get locked in place - wolf
