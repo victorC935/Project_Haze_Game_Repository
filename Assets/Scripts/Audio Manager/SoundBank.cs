@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMOD.Studio;
 using FMODUnity;
-
+//contains personalised FMOD Studio fixes/ wrappers 
 using FMODhotfixes;
 
 public class SoundBank : MonoBehaviour
