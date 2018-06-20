@@ -14,6 +14,10 @@ public class InteractionScript : MonoBehaviour
 
     public GameObject lastDoor;
 
+
+    [Range(5.0f, 10.0f)] [Header("Recommended value is 8")]
+    public float doorSpeed;
+
     private float openSpeed;
 
 
@@ -74,8 +78,9 @@ public class InteractionScript : MonoBehaviour
             {
                 // This part will translate horizontal mouse movement, to apply forces on the door's Rigidbody component so it will actually open.
                 lastDoor.GetComponent<DoorScript>().interacted = true;
-                lastDoor.GetComponent<Rigidbody>().AddForce(0, 0, openSpeed * 1000);    // applies force to open the door
-                // HAS TO BE REGULATED WITH AN EQUATION SINCE IT DOES NOT MAKE THE OBJECT ROTATE THE SAME RATE WHEN THE DOOR IS BEING OPENED
+
+                lastDoor.GetComponent<Rigidbody>().AddForce(-openSpeed *(doorSpeed * 100), 0, openSpeed *(doorSpeed * 100));    // applies force to open the door
+
             }
         }
     }
