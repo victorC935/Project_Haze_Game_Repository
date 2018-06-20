@@ -124,9 +124,9 @@ GameObject:
   - component: {fileID: 91162466}
   - component: {fileID: 91162465}
   - component: {fileID: 91162464}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DoorHandle
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 91162462}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -357,10 +357,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 484696160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 729cc189c609f0d4ebfaa6c7b23f2138, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fdf9a58e6b7ec5488b773802ed8dec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentWeapon: {fileID: 0}
+  lastDoor: {fileID: 0}
+  doorSpeed: 8
 --- !u!1 &861779744
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,9 +377,9 @@ GameObject:
   - component: {fileID: 861779747}
   - component: {fileID: 861779746}
   - component: {fileID: 861779751}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WoodenDoorMain
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -507,11 +509,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 861779744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce55782c8200fe04c8f74b2591b51b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: f5353a465ab71de4fa6b5f76cdac01c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interacted: 0
   isLocked: 0
+  isWooden: 0
   KeyNumber: 0
 --- !u!1 &1452313197
 GameObject:
@@ -630,9 +633,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 484696161}
   movementSettings:
-    ForwardSpeed: 8
-    BackwardSpeed: 4
-    StrafeSpeed: 4
+    ForwardSpeed: 2
+    BackwardSpeed: 1
+    StrafeSpeed: 1
     RunMultiplier: 2
     RunKey: 304
     JumpForce: 50
@@ -738,9 +741,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1917260381}
   - component: {fileID: 1917260380}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WoodenDoor
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
