@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class BasicAI : MonoBehaviour
 {
+    #region TempVariables
 
+    bool playerSpotted = false;
+    bool playerInSight = false;
+    bool giveUpSearch = false;
+
+    #endregion
     private enum EnemyState
     {
         Patrol,
@@ -67,7 +73,7 @@ public class BasicAI : MonoBehaviour
 
                 break;
             default:
-                ();
+                Debug.Break();
 
                 break;
         }
@@ -76,27 +82,48 @@ public class BasicAI : MonoBehaviour
 
     public void OnPatrol()
     {
+        //Do Patrol stuff
 
+
+        if (playerInSight)
+            behaviourState = EnemyState.SpotPlayer;
     }
 
     public void OnAlert()
     {
-
+        //unsure as to what needs to be done in this state at the moment. 
     }
 
     public void OnSearchFor()
     {
+        //TODO Search for player
+        if(!giveUpSearch)
+        {
+            //search for player based on co-ords
+        }
 
     }
 
     public void OnSpotPlayer()
     {
+        //TODO Become alerted to player presence
+        //TODO needs a player sight checker
 
+        //Move to hunt player 
+        behaviourState = EnemyState.Hunt;
     }
 
     public void OnLostSight()
     {
+        //TODO hunt down player and search last known location
+        
 
+        if(!playerInSight && !playerSpotted)
+        {
+            behaviourState = EnemyState.SearchFor;
+            //TODO Pass through the last known co-ords for player (approx) for AI to investigate
+
+        }
     }
 
     public void OnHunt()
