@@ -7,8 +7,8 @@ public class StateMachine : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        StartCoroutine(PatrolPoint(Vector3.zero, 4f, true));
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
