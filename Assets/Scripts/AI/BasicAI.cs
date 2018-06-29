@@ -23,6 +23,14 @@ public class BasicAI : MonoBehaviour
     }
 
     private EnemyState behaviourState = new EnemyState();
+    #region temp variables
+
+    private int fieldOfView;
+    private GameObject player;
+    private GameObject entityPosition;
+    private float spotDistance;
+
+    #endregion
 
     private void Awake()
     {
