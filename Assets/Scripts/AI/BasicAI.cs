@@ -156,15 +156,14 @@ public class BasicAI : MonoBehaviour
         {
             return false;
         }
-
-    }
-    public void OnHunt()
-    {
-
     }
 
-    public void OnAttack()
+    public IEnumerator TrackPlayer()
     {
-
+        while (playerInSight)
+        {
+            yield return new WaitForSeconds(2);
+            playerLastKnown = player.transform.position; 
+        }
     }
 }
