@@ -51,11 +51,13 @@ public class BasicAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(IsInSight())
-        {
-            behaviourState = EnemyState.SpotPlayer;
-        }
+        if (IsInSight())
+            playerInSight = true;
+        else
+            playerInSight = false;
+
     }
+
 
     private void BehaviourDecider()
     {
@@ -99,8 +101,7 @@ public class BasicAI : MonoBehaviour
 
     public void OnPatrol()
     {
-        //Do Patrol stuff
-
+        //Do patrol stuff
 
         if (playerInSight)
             behaviourState = EnemyState.SpotPlayer;
@@ -113,40 +114,42 @@ public class BasicAI : MonoBehaviour
 
     public void OnSearchFor()
     {
-        //TODO Search for player
-        if (!giveUpSearch)
-        {
-            //search for player based on co-ords
-        }
+        agent.SetDestination(playerLastKnown);
+        //TODO when at pos, stop and look around
 
     }
 
     public void OnSpotPlayer()
     {
+        agent.SetDestination(player.transform.position);
+        StartCoroutine(TrackPlayer());
         //TODO Become alerted to player presence
         //TODO needs a player sight checker
 
         //Move to hunt player 
-        behaviourState = EnemyState.Hunt;
-    }
-
-    public void OnLostSight()
-    {
-        //TODO hunt down player and search last known location
+        //behaviourState = EnemyState.Hunt;
 
 
-        if (!playerInSight && !playerSpotted)
+        if (!playerInSight)
         {
             behaviourState = EnemyState.SearchFor;
-            //TODO Pass through the last known co-ords for player (approx) for AI to investigate
-
         }
+    }
+
+    public void OnHunt()
+    {
+
+    }
+
+    public void OnAttack()
+    {
+
     }
 
     bool IsInSight()
     {
-        float currentDistance = Vector3.Distance(entityPosition.transform.position, player.transform.position);
-        Vector3 fwdDir = entityPosition.transform.forward;
+        float currentDistance = Vector3.Distance(transform.position, player.transform.position);
+        Vector3 fwdDir = transform.forward;
         float tempangle = Vector3.Angle(fwdDir, player.transform.position);
         if (tempangle <= (fieldOfView / 2) && currentDistance <= spotDistance)
         {
