@@ -137,6 +137,21 @@ public class BasicAI : MonoBehaviour
         }
     }
 
+    bool IsInSight()
+    {
+        float currentDistance = Vector3.Distance(entityPosition.transform.position, player.transform.position);
+        Vector3 fwdDir = entityPosition.transform.forward;
+        float tempangle = Vector3.Angle(fwdDir, player.transform.position);
+        if (tempangle <= (fieldOfView / 2) && currentDistance <= spotDistance)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
     public void OnHunt()
     {
 
