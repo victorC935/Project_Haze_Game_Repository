@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class BasicAI : MonoBehaviour
 {
     #region TempVariables
 
-    bool playerSpotted = false;
-    bool playerInSight = false;
-    bool giveUpSearch = false;
+    private int fieldOfView;
+    private float spotDistance;
+    private bool playerInSight;
+
+    public Vector3 playerLastKnown;
 
     #endregion
+
     private enum EnemyState
     {
         Patrol,
@@ -21,20 +25,22 @@ public class BasicAI : MonoBehaviour
         Hunt,
         Attack,
     }
-
     private EnemyState behaviourState = new EnemyState();
-    #region temp variables
 
-    private int fieldOfView;
-    private GameObject player;
-    private GameObject entityPosition;
-    private float spotDistance;
+    NavMeshAgent agent;
+    GameObject destination;
+    GameObject player;
 
-    #endregion
-
-    private void Awake()
+    void Awake()
     {
         behaviourState = EnemyState.Patrol;
+
+        player = GameObject.FindGameObjectWithTag("Player");
+        if (!player)
+        {
+            Debug.LogWarning("No player is in scene");
+        }
+        agent = GetComponent<NavMeshAgent>();
     }
     // Use this for initialization
     void Start()
