@@ -45,7 +45,10 @@ public class BasicAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(IsInSight())
+        {
+            behaviourState = EnemyState.SpotPlayer;
+        }
     }
 
     private void BehaviourDecider()
@@ -105,7 +108,7 @@ public class BasicAI : MonoBehaviour
     public void OnSearchFor()
     {
         //TODO Search for player
-        if(!giveUpSearch)
+        if (!giveUpSearch)
         {
             //search for player based on co-ords
         }
@@ -124,9 +127,9 @@ public class BasicAI : MonoBehaviour
     public void OnLostSight()
     {
         //TODO hunt down player and search last known location
-        
 
-        if(!playerInSight && !playerSpotted)
+
+        if (!playerInSight && !playerSpotted)
         {
             behaviourState = EnemyState.SearchFor;
             //TODO Pass through the last known co-ords for player (approx) for AI to investigate
