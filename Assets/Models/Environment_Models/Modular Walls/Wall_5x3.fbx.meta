@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 53567e96594a1824d808e0a803ca7472
+guid: a7aef24f9ab1809458b1698651dda753
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
+    2100000: Material
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Wall_5M
+    4300000: Wall 5x3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
