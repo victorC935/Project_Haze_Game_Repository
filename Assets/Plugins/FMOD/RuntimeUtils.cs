@@ -428,8 +428,10 @@ namespace FMODUnity
                     return FMODPlatform.Windows;
                 case BuildTarget.XboxOne:
                     return FMODPlatform.XboxOne;
-                #if UNITY_5_2 || UNITY_5_3_OR_NEWER
+#if UNITY_5_2 || UNITY_5_3_OR_NEWER
+#pragma warning disable CS0618 // Type or member is obsolete
                 case BuildTarget.WiiU:
+#pragma warning restore CS0618 // Type or member is obsolete
                     return FMODPlatform.WiiU;
                 #endif
                 case BuildTarget.WSAPlayer:

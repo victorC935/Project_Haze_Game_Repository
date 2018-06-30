@@ -9,8 +9,7 @@ namespace FMODhotfixes
 {
     /// <summary>
     /// This namespace contains any fixes that I have made to make the implementation of FMOD somewhat easier
-    /// They are of my own creation and aren't officially supported or owned by FMOD Studio or anyone else except me
-    /// http://jfaulkner.me/
+    /// jfaulkner3.wordpress.com
     /// </summary>
     [Serializable]
     public class EventInstanceWrapper
@@ -50,5 +49,21 @@ namespace FMODhotfixes
         {
             _eventInstance = FMODUnity.RuntimeManager.CreateInstance(eventRefence);
         }
+        
     }
+
+    [Serializable]
+    public class ParameterWrapper
+    {
+        FMOD.Studio.ParameterInstance parameterInstance;
+
+        public ParameterInstance GetParam(EventInstance eventInstance, string parameterName)
+        {
+            ParameterInstance _parameterInstance;
+            eventInstance.getParameter(parameterName, out _parameterInstance);
+            return _parameterInstance;
+        }
+    }
+
+
 }
