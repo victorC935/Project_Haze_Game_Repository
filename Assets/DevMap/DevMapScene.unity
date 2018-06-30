@@ -504,11 +504,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 484696160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 729cc189c609f0d4ebfaa6c7b23f2138, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fdf9a58e6b7ec5488b773802ed8dec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentWeapon: {fileID: 0}
   lastDoor: {fileID: 0}
+  doorSpeed: 8
 --- !u!1 &861779744
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +656,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 861779744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce55782c8200fe04c8f74b2591b51b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: f5353a465ab71de4fa6b5f76cdac01c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interacted: 0
