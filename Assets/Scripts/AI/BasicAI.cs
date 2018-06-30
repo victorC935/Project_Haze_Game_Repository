@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -6,30 +7,37 @@ using UnityEngine.AI;
 public class BasicAI : MonoBehaviour
 {
     #region TempVariables
+    //Unsure if these variables are going to be transitioned to be permanant
 
     private int fieldOfView;
     private float spotDistance;
     private bool playerInSight;
+    private int timeforSearch = 5; //time that the entity takes before giving up search for the other entity, when sight lost
 
-    public Vector3 playerLastKnown;
+    int approxStopDistance = 1; //the approximate distance check to be used when checking current and target distance
+    public Vector3 playerLastKnown; //stores the last known player location
+
+    private Vector3 patrolPointOne;
+    private Vector3 patrolPointTwo;
 
     #endregion
 
+    NavMeshAgent agent;
+    GameObject destination;
+    GameObject player;
+
+    //Enum of Enemy behaviours for basic FSM
     private enum EnemyState
     {
         Patrol,
         Alert,
         SearchFor,
         SpotPlayer,
-        LostSight,
         Hunt,
         Attack,
     }
     private EnemyState behaviourState = new EnemyState();
 
-    NavMeshAgent agent;
-    GameObject destination;
-    GameObject player;
 
     void Awake()
     {
@@ -42,13 +50,14 @@ public class BasicAI : MonoBehaviour
         }
         agent = GetComponent<NavMeshAgent>();
     }
-    // Use this for initialization
+
     void Start()
     {
-
+        //prevents calling player tracking every frame
+        InvokeRepeating("TrackPlayer", 1, 2);
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (IsInSight())
@@ -161,12 +170,18 @@ public class BasicAI : MonoBehaviour
         }
     }
 
-    public IEnumerator TrackPlayer()
+    /// <summary>
+    /// Tracks the players last known location. 
+    /// Advised to run from start via repeat invoker or coroutine
+    /// </summary>
+    public void TrackPlayer()
     {
         while (playerInSight)
         {
-            yield return new WaitForSeconds(2);
-            playerLastKnown = player.transform.position; 
+            playerLastKnown = player.transform.position;
         }
+
+        //NOTE I am not sure what this is doing, but it seems to work...
+        //yield return new WaitUntil(() => playerInSight == true );
     }
 }
