@@ -12,16 +12,28 @@ public class InteractionScript : MonoBehaviour
     GameObject hitObject;
     public GameObject CurrentWeapon;
 
+    public GameObject lastDoor;
+
+
+    [Range(5.0f, 10.0f)] [Header("Recommended value is 8")]
+    public float doorSpeed;
+
+    private float openSpeed;
+
 
 
     void Start()
     {
         CurrentWeapon = null;
+        lastDoor = null;
     }
 
     // Update is called once per frame
     void Update()
     {
+        openSpeed = Input.GetAxis("Mouse X");
+        openSpeed = Mathf.Clamp(openSpeed, -0.5f, 0.5f);
+
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 2.5f, layerMask))
         {
@@ -45,21 +57,30 @@ public class InteractionScript : MonoBehaviour
         RaycastHit doorHit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out doorHit, 2.5f, interactableLayerMask))
         {
-            if (Input.GetButton("Use")) // This is to be used for opening the door or starting the lockpicking sequence if the player has the lockpick selected.
+            if (Input.GetButtonDown("Use")) // This is to be used for opening the door or starting the lockpicking sequence if the player has the lockpick selected.
             {
-                hitObject = hit.collider.gameObject;
+                hitObject = doorHit.collider.gameObject;
+
                 if(hitObject.tag == "Door") // Check if the object has the tag Door, so it can actually access the script.
                 {
-                    if (!hitObject.GetComponent<DoorScript>().isLocked) // Checks if the door is not locked
-                    {
-                        // This part will translate horizontal mouse movement, to apply forces on the door's Rigidbody component so it will actually open.
-                        hitObject.GetComponent<DoorScript>().interacted = true;
-                    }
+                    lastDoor = hitObject;
                 }
             }
-            if (Input.GetButtonUp("Use"))
+        }
+        if (Input.GetButtonUp("Use") && lastDoor != null)
+        {
+            lastDoor.GetComponent<DoorScript>().interacted = false; // Lock the door in place.
+            lastDoor = null;
+        }
+        if (lastDoor != null) // Checks if the door is not locked
+        {
+            if (!lastDoor.GetComponent<DoorScript>().isLocked && Input.GetButton("Use"))
             {
-                hitObject.GetComponent<DoorScript>().interacted = false; // Lock the door in place.
+                // This part will translate horizontal mouse movement, to apply forces on the door's Rigidbody component so it will actually open.
+                lastDoor.GetComponent<DoorScript>().interacted = true;
+
+                lastDoor.GetComponent<Rigidbody>().AddForce(-openSpeed *(doorSpeed * 100), 0, openSpeed *(doorSpeed * 100));    // applies force to open the door
+
             }
         }
     }
