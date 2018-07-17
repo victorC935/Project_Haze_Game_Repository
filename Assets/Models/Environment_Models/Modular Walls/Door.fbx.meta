@@ -1,15 +1,21 @@
 fileFormatVersion: 2
-guid: 67528ca30288a904cad3cc2f069aaa85
+guid: 2875dbeb0c531784b8b85936b5d4d14a
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Door
+    100004: Knob
     400000: //RootNode
-    2100000: Material
-    2100002: Material.001
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Doorway 2x3
+    400002: Door
+    400004: Knob
+    2100000: No Name
+    2300000: Door
+    2300002: Knob
+    3300000: Door
+    3300002: Knob
+    4300000: Knob
+    4300002: Door
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -41,7 +47,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
