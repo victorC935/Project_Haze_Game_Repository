@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     #region Variables for Developers
     public bool canMove;
     public bool canLook;
-
+	public bool isInDark;
+	
     private bool isStealthed;
     private bool isCrouching;
 
