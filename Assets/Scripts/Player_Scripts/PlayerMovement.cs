@@ -10,8 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public bool canLook;
 	public bool isInDark;
 	
-    private bool isStealthed;
-    private bool isCrouching;
+    public bool isStealthed;
+    public bool isCrouching;
 
     public float moveSpeedSet;
     public float startRotation;
