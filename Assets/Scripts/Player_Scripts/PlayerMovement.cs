@@ -175,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
         {
             yRotation += Input.GetAxis("Mouse X") * lookSensitivity;
             xRotation -= Input.GetAxis("Mouse Y") * lookSensitivity;
-            xRotation = Mathf.Clamp(xRotation, -80, 100);
+            xRotation = Mathf.Clamp(xRotation, -89, 89);
             currentXRotation = Mathf.SmoothDamp(currentXRotation, xRotation, ref xRotationV, lookSmoothnes);
             currentYRotation = Mathf.SmoothDamp(currentYRotation, yRotation, ref yRotationV, lookSmoothnes);
             cameraGO.transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
