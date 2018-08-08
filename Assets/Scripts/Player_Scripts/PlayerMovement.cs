@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 	public bool isInDark;
 	
     public bool isStealthed;
-    public bool isCrouching;
+    public bool crouched;
 
     public float moveSpeedSet;
     public float startRotation;
@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
-        if (!isCrouching) {
+        if (!crouched) {
             if (Input.GetButtonDown("Run") && onGround())
             {
                 Sprint();
@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (Input.GetButtonDown("Crouch") && onGround())
             {
-                isCrouching = true;
+                crouched = true;
                 Crouch();
             }
             if (Input.GetButtonDown("Jump") && onGround())
@@ -99,21 +99,21 @@ public class PlayerMovement : MonoBehaviour
                 Jump();
             }
         }
-        if (!Input.GetButton("Crouch") && canStand() && isCrouching)
+        if (!Input.GetButton("Crouch") && canStand() && crouched)
         {
-            isCrouching = false;
+            crouched = false;
             Crouch();
         }
-        if (isCrouching && canStand())
+        if (crouched && canStand())
         {
             if (Input.GetButtonUp("Crouch"))
             {
-                isCrouching = false;
+                crouched = false;
                 Crouch();
             }
             if (Input.GetButtonDown("Run") && onGround())
             {
-                isCrouching = false;
+                crouched = false;
                 Crouch();
                 Sprint();
             }
@@ -121,13 +121,13 @@ public class PlayerMovement : MonoBehaviour
     }// Checks for inputs and calls the appropriate function for them. I did it this way to avoid a big chunk of spaghetti code.
     private void Crouch()
     {
-        if (isCrouching)
+        if (crouched)
         {
             moveSpeed = crouchSpeed;
             gameObject.transform.localScale = crouchSize;
             gameObject.transform.position = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
         }
-        if (!isCrouching)
+        if (!crouched)
         {
             moveSpeed = moveSpeedSet;
             gameObject.transform.localScale = size;
