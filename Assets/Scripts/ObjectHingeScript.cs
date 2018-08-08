@@ -19,6 +19,8 @@ public class ObjectHingeScript : MonoBehaviour {
     #region Shared
     public bool interacted;
     public bool isLocked;
+
+    public Vector3 startPos;
     #endregion
 
     [Tooltip("If the door does not have a key, input 0")]
@@ -27,6 +29,7 @@ public class ObjectHingeScript : MonoBehaviour {
 
     void Start()
     {
+        startPos = gameObject.transform.position;
         interacted = false;
     }
 

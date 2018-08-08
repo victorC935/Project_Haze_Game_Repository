@@ -300,7 +300,7 @@ HingeJoint:
   m_UseMotor: 1
   m_Motor:
     targetVelocity: 0
-    force: 999999
+    force: 0
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
@@ -368,6 +368,7 @@ MonoBehaviour:
   isChest: 0
   interacted: 0
   isLocked: 0
+  startPos: {x: 0, y: 0, z: 0}
   KeyNumber: 0
 --- !u!136 &136243396781126454
 CapsuleCollider:
