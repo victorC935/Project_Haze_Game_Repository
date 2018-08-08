@@ -7,14 +7,16 @@ public class PlayerMovement : MonoBehaviour
 {
     #region Variables for Developers
     public bool canMove;
+    public Vector3 lockPosition;
     public bool canLook;
-	public bool isInDark;
+    public Vector3 lockRotation;
+    public bool isInDark;
 	
     public bool isStealthed;
     public bool crouched;
 
     public float moveSpeedSet;
-    public float startRotation;
+
     private float moveSpeed;
     private float sprintSpeed;
     private float crouchSpeed;
@@ -50,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     #endregion
     private void Start() // Setting up basic variables, checking stuff to avoid common mistakes.
     {
-        yRotation = startRotation;
+        yRotation = transform.eulerAngles.y;
         distToGround = GetComponent<Collider>().bounds.extents.y;
         crouchSize = size;
         moveSpeed = moveSpeedSet;
@@ -76,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
         {
             gameObject.transform.eulerAngles = new Vector3 (0,yRotation,0);
         }// Checks if the rotation gets messed up somehow, should not happen, but its best to make sure. Happened 1 out of 10 times in testing.
+        LockPlayer();
     }
     private void FixedUpdate()
     {
@@ -186,10 +189,17 @@ public class PlayerMovement : MonoBehaviour
         #endregion
         #endregion
     }// Player-, Camera-, Cursor movement
-    private void Stealth()
+    private void LockPlayer()
     {
-
-    }// Empty right now, may be used later.
+        if (canLook == false)
+        {
+            cameraGO.transform.eulerAngles = lockRotation;
+        }
+        if(canMove == false)
+        {
+            gameObject.transform.position = lockPosition;
+        }
+    }
     bool onGround()
     {
         return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);

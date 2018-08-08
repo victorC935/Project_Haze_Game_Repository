@@ -9,30 +9,33 @@ public class InteractionScript : MonoBehaviour
     int layerMask = 1 << 9; // Used for Weapons
     int interactableLayerMask = 1 << 11; // To be used for items, doors, lights etc.
 
-    GameObject hitObject;
+    public GameObject player;
+
     public GameObject CurrentWeapon;
 
+    private GameObject hitObject;
     public GameObject lastObject;
-
-    public bool canSeeSomething;
 
     [Range(5.0f, 10.0f)] [Header("Recommended value is 8")]
     public float doorSpeed;
-
     private float openSpeedHorizontal;
     private float openSpeedVertical;
 
-
+    private Vector3 basePos;
+    private Vector3 difference;
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         CurrentWeapon = null;
         lastObject = null;
+        doorSpeed = doorSpeed * 2;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         openSpeedHorizontal = Input.GetAxis("Mouse X");
         openSpeedHorizontal = Mathf.Clamp(openSpeedHorizontal, -0.5f, 0.5f);
 
@@ -59,7 +62,6 @@ public class InteractionScript : MonoBehaviour
         RaycastHit objHit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out objHit, 2.5f, interactableLayerMask))
         {
-            canSeeSomething = true;
             if (Input.GetButtonDown("Use")) // This is to be used for opening the door or starting the lockpicking sequence if the player has the lockpick selected.
             {
                 hitObject = objHit.collider.gameObject;
@@ -67,12 +69,13 @@ public class InteractionScript : MonoBehaviour
                 if(hitObject.tag == "HingeObject") // Check if the object has the tag Door, so it can actually access the script.
                 {
                     lastObject = hitObject.transform.parent.gameObject;
+                    player.GetComponent<PlayerMovement>().lockRotation = gameObject.transform.eulerAngles;
+                    player.GetComponent<PlayerMovement>().lockPosition = player.transform.position;
                 }
             }
         }
         if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out objHit, 2.5f, interactableLayerMask))
-        {
-            canSeeSomething = false;        // This helps, so the player does not open doors they are not facing at.
+        {       // This helps, so the player does not open doors they are not facing at.
 
         }
         #region Door Related
@@ -85,21 +88,44 @@ public class InteractionScript : MonoBehaviour
         {
             if (!lastObject.GetComponent<ObjectHingeScript>().isLocked && Input.GetButton("Use"))
             {
-                float distanceFromDoorknob = Vector3.Distance(gameObject.transform.position, lastObject.GetComponent<ObjectHingeScript>().doorKnob.transform.position);
-                Debug.Log(distanceFromDoorknob);
                 // This part will translate horizontal mouse movement, to apply forces on the door's Rigidbody component so it will actually open.
                 lastObject.GetComponent<ObjectHingeScript>().interacted = true;
-                if (hitObject.name == "OpenFrom" && canSeeSomething)
+                if (hitObject.name == "OpenFrom" && difference.x < 1)
                 {
-                    lastObject.GetComponent<Rigidbody>().AddForce(-openSpeedHorizontal * (doorSpeed * 100), 0, openSpeedHorizontal * (doorSpeed * 100));    // applies force to open the door
+                    player.GetComponent<PlayerMovement>().canLook = false;
+                    player.GetComponent<PlayerMovement>().canMove = false;
+                    lastObject.GetComponent<Rigidbody>().AddForce(-openSpeedHorizontal * (doorSpeed) * 1.5f, 0, openSpeedHorizontal * (doorSpeed));    // applies force to open the door
                 }
-                if (hitObject.name == "OpenTo" && canSeeSomething)
+                if (hitObject.name == "OpenFrom" && difference.x > 1)
                 {
-                    lastObject.GetComponent<Rigidbody>().AddForce(openSpeedHorizontal * (doorSpeed * 100), 0, -openSpeedHorizontal * (doorSpeed * 100));    // applies force to open the door
+                    player.GetComponent<PlayerMovement>().canLook = false;
+                    player.GetComponent<PlayerMovement>().canMove = false;
+                    lastObject.GetComponent<Rigidbody>().AddForce(openSpeedHorizontal * (doorSpeed) * 1.5f, 0, -openSpeedHorizontal * (doorSpeed));    // applies force to open the door
+                }
+                if (hitObject.name == "OpenTo" && difference.x > -1)
+                {
+                    lastObject.GetComponent<Rigidbody>().AddForce(openSpeedHorizontal * (doorSpeed) * 1.5f, 0, -openSpeedHorizontal * (doorSpeed));    // applies force to open the door
+                    player.GetComponent<PlayerMovement>().canLook = false;
+                    player.GetComponent<PlayerMovement>().canMove = false;
+                }
+                if (hitObject.name == "OpenTo" && difference.x < -1)
+                {
+                    lastObject.GetComponent<Rigidbody>().AddForce(-openSpeedHorizontal * (doorSpeed) * 1.5f, 0, openSpeedHorizontal * (doorSpeed));    // applies force to open the door
+                    player.GetComponent<PlayerMovement>().canLook = false;
+                    player.GetComponent<PlayerMovement>().canMove = false;
                 }
             }
+            difference = lastObject.GetComponent<ObjectHingeScript>().startPos - player.transform.position;
+            if (lastObject.GetComponent<ObjectHingeScript>().isLocked && Input.GetButton("Use"))
+            {
+                // Check the keys in the inventory if they have the right code.
+            }
         }
-        // TO DO: Get the camera velocity and use it with the door opening function to make the door opening more natural
+        if (lastObject == null && player.GetComponent<PlayerMovement>().canLook == false)
+        {
+            player.GetComponent<PlayerMovement>().canLook = true;
+            player.GetComponent<PlayerMovement>().canMove = true;
+        }
         #endregion
     }
 }
