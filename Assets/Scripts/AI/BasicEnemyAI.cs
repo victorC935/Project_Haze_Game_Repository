@@ -9,7 +9,13 @@ public class BasicEnemyAI : MonoBehaviour
 
     [SerializeField]
     private int fieldOfView; //Degrees
+<<<<<<< HEAD
     public float viewDistance;
+=======
+    [SerializeField]
+    public float viewDistance;
+    public float hearingRadius;
+>>>>>>> master
     [SerializeField]
     private float darknessViewReduction;
     [SerializeField]
@@ -33,7 +39,11 @@ public class BasicEnemyAI : MonoBehaviour
     [SerializeField]
     private float runningSpeed;
 
+<<<<<<< HEAD
     //[SerializeField]
+=======
+    [SerializeField]
+>>>>>>> master
     public Vector3[] patrolPoints;
     private int activePatrolPoint;
 
@@ -288,7 +298,11 @@ public class BasicEnemyAI : MonoBehaviour
         RaycastHit hit;
         //Check if player is in enemy FOV, if player is close enough to see, and if a direct line of sight is established
         float tempAngle = Vector3.Angle(gameObject.transform.forward, player.transform.position - gameObject.transform.position);
+<<<<<<< HEAD
         if ((!player.GetComponent<PlayerMovement>().crouched && tempAngle <= (fieldOfView / 2) && Physics.Raycast(new Ray(gameObject.transform.position, player.transform.position - gameObject.transform.position), out hit, Mathf.Infinity)) || (player.GetComponent<PlayerMovement>().crouched && tempAngle <= (fieldOfView / 2) && Physics.Raycast(new Ray(gameObject.transform.position, new Vector3(player.transform.position.x, player.transform.position.y + playerCrouchedHeight, player.transform.position.z) - gameObject.transform.position), out hit, Mathf.Infinity)))
+=======
+        if ((!player.GetComponent<PlayerMovement>().isCrouching && tempAngle <= (fieldOfView / 2) && Physics.Raycast(new Ray(gameObject.transform.position, player.transform.position - gameObject.transform.position), out hit, Mathf.Infinity)) || (player.GetComponent<PlayerMovement>().isCrouching && tempAngle <= (fieldOfView / 2) && Physics.Raycast(new Ray(gameObject.transform.position, new Vector3(player.transform.position.x, player.transform.position.y + playerCrouchedHeight, player.transform.position.z) - gameObject.transform.position), out hit, Mathf.Infinity)))
+>>>>>>> master
         {
             //Check if player is in dark and reduce view distance on enemy
             float activeViewDistance = viewDistance;
@@ -296,7 +310,11 @@ public class BasicEnemyAI : MonoBehaviour
                    activeViewDistance -= darknessViewReduction;
              }
             //Check if player is crouched and reduce view distance of enemy
+<<<<<<< HEAD
             if (player.GetComponent<PlayerMovement>().crouched)
+=======
+            if (player.GetComponent<PlayerMovement>().isCrouching)
+>>>>>>> master
             {
                 activeViewDistance -= crouchViewReduction;
             }
