@@ -1,0 +1,9 @@
+Format:
+Entry No, Date, Is it fixed[Y/N], Short Error Description
+Note: Leave a line between entries
+E.g.
+0, 09/06/18, N, Shadows start flashing when camera is too far away
+
+Entries:
+0, 14/06/18, N, Volume sliders don't scale linearly
+1, 18/06/18, Y, While the player is holding E and runs through the door, the door does not get locked in place - wolf
