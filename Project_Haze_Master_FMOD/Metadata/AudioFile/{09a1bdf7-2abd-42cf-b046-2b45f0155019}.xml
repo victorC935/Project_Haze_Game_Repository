@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{09a1bdf7-2abd-42cf-b046-2b45f0155019}">
+        <property name="assetPath">
+            <value>Junsu/AC_Hum_Loop_01.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>30.756166666666665</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{dbb84ce5-7b9b-4d65-b5e7-3a5669e2fb0b}</destination>
+        </relationship>
+    </object>
+</objects>

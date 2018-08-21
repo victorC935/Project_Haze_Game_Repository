@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{51d51e62-46e0-41bb-85e2-5079984f06d6}">
+        <property name="assetPath">
+            <value>Jim/FLY_Cloth_GrabShorts_01.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.80251700680272109</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{dbb84ce5-7b9b-4d65-b5e7-3a5669e2fb0b}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -35,3 +35,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# FMOD
+/Project_Haze_Master_FMOD/.cache
+/Project_Haze_Master_FMOD/.recycle
