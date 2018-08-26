@@ -1,8 +1,6 @@
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
-[Bb]uild/
-[Bb]uilds/
 Assets/AssetStoreTools*
 Assets/Models/
 
@@ -33,5 +31,7 @@ ExportedObj/
 sysinfo.txt
 
 # Builds
-*.apk
-*.unitypackage
+
+# FMOD
+/Project_Haze_Master_FMOD/.cache
+/Project_Haze_Master_FMOD/.recycle
