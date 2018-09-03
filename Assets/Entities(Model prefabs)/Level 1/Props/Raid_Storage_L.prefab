@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4063224953628766}
   - component: {fileID: 33518514864697598}
   - component: {fileID: 23358418982805672}
+  - component: {fileID: 64293911456744732}
   m_Layer: 0
   m_Name: RaidStprage_Support_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1086148227309280
 GameObject:
@@ -41,7 +42,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1314641443045328
 GameObject:
@@ -53,12 +54,13 @@ GameObject:
   - component: {fileID: 4743320145854180}
   - component: {fileID: 33472232478777876}
   - component: {fileID: 23025819997860788}
+  - component: {fileID: 64354202146444100}
   m_Layer: 0
   m_Name: RaidStprage_Storage_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1324699603136278
 GameObject:
@@ -70,12 +72,13 @@ GameObject:
   - component: {fileID: 4094710095147924}
   - component: {fileID: 33047908761975194}
   - component: {fileID: 23282375533400444}
+  - component: {fileID: 64926565939787706}
   m_Layer: 0
   m_Name: RaidStprage_Wheels_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1329611089473112
 GameObject:
@@ -87,12 +90,13 @@ GameObject:
   - component: {fileID: 4927932033085944}
   - component: {fileID: 33890477121875898}
   - component: {fileID: 23670090715375814}
+  - component: {fileID: 64105910763630248}
   m_Layer: 0
   m_Name: RaidStprage_Support2_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1362881712744526
 GameObject:
@@ -104,12 +108,13 @@ GameObject:
   - component: {fileID: 4878618691018192}
   - component: {fileID: 33055102962809246}
   - component: {fileID: 23249363588863316}
+  - component: {fileID: 64488990592151230}
   m_Layer: 0
   m_Name: RaidStprage_Shelves_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1527709648434032
 GameObject:
@@ -124,7 +129,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1656350494333504
 GameObject:
@@ -136,12 +141,13 @@ GameObject:
   - component: {fileID: 4471591786259714}
   - component: {fileID: 33614853714090052}
   - component: {fileID: 23725307884848234}
+  - component: {fileID: 64817967835479134}
   m_Layer: 0
   m_Name: RaidStprage_Support3_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1788255588315518
 GameObject:
@@ -153,12 +159,13 @@ GameObject:
   - component: {fileID: 4785378247734688}
   - component: {fileID: 33041671416397248}
   - component: {fileID: 23677395911777570}
+  - component: {fileID: 64405736715334256}
   m_Layer: 0
   m_Name: RaidStprage_Wire_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1881634099272460
 GameObject:
@@ -170,12 +177,13 @@ GameObject:
   - component: {fileID: 4515763922064186}
   - component: {fileID: 33173366942144896}
   - component: {fileID: 23016109862075876}
+  - component: {fileID: 64261189337629052}
   m_Layer: 0
   m_Name: RaidStprage_Monitor_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4063224953628766
 Transform:
@@ -275,9 +283,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1086148227309280}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.809641, y: 0.5042002, z: -14.659039}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.07024103, y: 0.5042002, z: 0.25852403}
+  m_LocalScale: {x: 0.025, y: 1, z: 0.025}
   m_Children:
   - {fileID: 4577932865674736}
   - {fileID: 4515763922064186}
@@ -652,3 +660,115 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1329611089473112}
   m_Mesh: {fileID: 4300006, guid: efa1f4bb25e431b41b39872378d669e8, type: 3}
+--- !u!64 &64105910763630248
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1329611089473112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300006, guid: efa1f4bb25e431b41b39872378d669e8, type: 3}
+--- !u!64 &64261189337629052
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1881634099272460}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: efa1f4bb25e431b41b39872378d669e8, type: 3}
+--- !u!64 &64293911456744732
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1054856945650226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: efa1f4bb25e431b41b39872378d669e8, type: 3}
+--- !u!64 &64354202146444100
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1314641443045328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300014, guid: efa1f4bb25e431b41b39872378d669e8, type: 3}
+--- !u!64 &64405736715334256
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788255588315518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: efa1f4bb25e431b41b39872378d669e8, type: 3}
+--- !u!64 &64488990592151230
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1362881712744526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300012, guid: efa1f4bb25e431b41b39872378d669e8, type: 3}
+--- !u!64 &64817967835479134
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1656350494333504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300008, guid: efa1f4bb25e431b41b39872378d669e8, type: 3}
+--- !u!64 &64926565939787706
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1324699603136278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300010, guid: efa1f4bb25e431b41b39872378d669e8, type: 3}
