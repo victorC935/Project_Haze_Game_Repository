@@ -11,6 +11,7 @@ public class MalfunctioningLights : MonoBehaviour {
     float offDelay;
 
     public bool canFlicker;
+    public bool canIntensify;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +27,7 @@ public class MalfunctioningLights : MonoBehaviour {
 
         onDelay = onDelay - 1 * Time.deltaTime;
         offDelay = offDelay - 1 * Time.deltaTime;
+        // Will be activated when debugging.
         if (GameManager.GetComponent<DebugManager>().debugMode)
         {
             if (Input.GetKeyDown(KeyCode.O))
@@ -36,11 +38,16 @@ public class MalfunctioningLights : MonoBehaviour {
             {
                 gameObject.GetComponent<Light>().enabled = true;
             }
+            if (Input.GetKeyDown(KeyCode.P) && Input.GetKeyDown(KeyCode.O))
+            {
+                canFlicker = !canFlicker;
+            }
         }
     }
     void Intensity()
     {
         intensity = Random.Range(0.5f, 5f);
+        gameObject.GetComponent<Light>().intensity = intensity;
     }
     void Flicker()
     {
@@ -54,8 +61,13 @@ public class MalfunctioningLights : MonoBehaviour {
             gameObject.GetComponent<Light>().enabled = false;
             offDelay = Random.Range(onDelay + 0.15f, 1);
         }
-        if(onDelay < -1 && offDelay < -1){ // Check if the script had skipped a tick because of framerate and fix the problem.
+
+        if (onDelay < -1 && offDelay < -1) { // Check if the script had skipped a tick because of framerate and fix the problem.
             onDelay = Random.Range(offDelay + 0.15f, 2);
+        }
+        if ((onDelay <= 0.1f || offDelay <= 0.1f) && canIntensify) // Randomizes intensity
+        {
+            Intensity();
         }
     }
 }
