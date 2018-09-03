@@ -18,14 +18,17 @@ public class TestMeleeScript : MonoBehaviour {
                 A-> Looking at a weapon that is on the ground
                 B-> Taking a weapon that is stuck in an enemy or an object
                 C-> Equipping a weapon from the inventory */
-        if (Input.GetKeyDown(KeyCode.O) && TestWeapon.GetComponent<MeleeWeaponScript>().isEquipped == false) {
-            TestWeapon.GetComponent<MeleeWeaponScript>().EquipWeapon();
-        }
-        if (Input.GetKeyDown(KeyCode.O) && TestWeapon.GetComponent<MeleeWeaponScript>().isEquipped == true)
+        if (TestWeapon != null)
         {
-            TestWeapon.GetComponent<MeleeWeaponScript>().UnEquipWeapon();
+            if (Input.GetKeyDown(KeyCode.O) && TestWeapon.GetComponent<MeleeWeaponScript>().isEquipped == false)
+            {
+                TestWeapon.GetComponent<MeleeWeaponScript>().EquipWeapon();
+            }
+            if (Input.GetKeyDown(KeyCode.O) && TestWeapon.GetComponent<MeleeWeaponScript>().isEquipped == true)
+            {
+                TestWeapon.GetComponent<MeleeWeaponScript>().UnEquipWeapon();
+            }
         }
-
     }
     void Attack()
     {
