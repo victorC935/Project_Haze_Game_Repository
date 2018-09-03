@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4942521342648388}
   - component: {fileID: 33644506513714234}
   - component: {fileID: 23757372190202534}
+  - component: {fileID: 64064187539024110}
   m_Layer: 0
   m_Name: pCube81
   m_TagString: Untagged
@@ -53,6 +54,7 @@ GameObject:
   - component: {fileID: 4100191282196048}
   - component: {fileID: 33461596948231858}
   - component: {fileID: 23749502621207190}
+  - component: {fileID: 64210575857866850}
   m_Layer: 0
   m_Name: polySurface66
   m_TagString: Untagged
@@ -185,3 +187,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1229983473166464}
   m_Mesh: {fileID: 4300002, guid: 2555f2b4de7a33c48ac26f15ca00fd31, type: 3}
+--- !u!64 &64064187539024110
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229983473166464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 2555f2b4de7a33c48ac26f15ca00fd31, type: 3}
+--- !u!64 &64210575857866850
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1927089406279732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2555f2b4de7a33c48ac26f15ca00fd31, type: 3}

@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4626690932426534}
   - component: {fileID: 33820923321114756}
   - component: {fileID: 23560880210020768}
+  - component: {fileID: 64252458270667034}
   m_Layer: 0
   m_Name: Round_Chair_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4626690932426534
 Transform:
@@ -34,9 +35,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242596387645174}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8466084, y: 1.0395778, z: -15.576179}
-  m_LocalScale: {x: 0.0328084, y: 0.0328084, z: 0.0328084}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.07116521, y: 1.0395778, z: 0.23559554}
+  m_LocalScale: {x: 0.00082021, y: 0.0328084, z: 0.00082021}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,4 +83,18 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242596387645174}
+  m_Mesh: {fileID: 4300000, guid: 3c8289c7987f17c4681d982544ee0133, type: 3}
+--- !u!64 &64252458270667034
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1242596387645174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3c8289c7987f17c4681d982544ee0133, type: 3}

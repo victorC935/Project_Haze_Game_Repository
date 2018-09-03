@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4038153683371800}
   - component: {fileID: 33824368367832174}
   - component: {fileID: 23496504066781474}
+  - component: {fileID: 64701903467191502}
   m_Layer: 0
   m_Name: Raid_Storage2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4038153683371800
 Transform:
@@ -34,9 +35,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1928529949493964}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8735664, y: 0.99351084, z: -13.73232}
-  m_LocalScale: {x: 0.0328084, y: 0.0328084, z: 0.0328084}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.07183916, y: 0.99351084, z: 0.281692}
+  m_LocalScale: {x: 0.00082021, y: 0.0328084, z: 0.00082021}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,4 +83,18 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1928529949493964}
+  m_Mesh: {fileID: 4300000, guid: a99643d985006604db23cb19fb9d408f, type: 3}
+--- !u!64 &64701903467191502
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928529949493964}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a99643d985006604db23cb19fb9d408f, type: 3}

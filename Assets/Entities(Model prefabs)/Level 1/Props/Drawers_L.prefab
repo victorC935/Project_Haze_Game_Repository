@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4611528521573328}
   - component: {fileID: 33877045304150844}
   - component: {fileID: 23383056435192708}
+  - component: {fileID: 64460395925548360}
   m_Layer: 0
   m_Name: Drawers_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4611528521573328
 Transform:
@@ -34,9 +35,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1191410439148442}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7359486, y: 1.47, z: -12.57}
-  m_LocalScale: {x: 0.0328084, y: 0.0328084, z: 0.0328084}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.068398714, y: 1.47, z: 0.31075}
+  m_LocalScale: {x: 0.00082021, y: 0.0328084, z: 0.00082021}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,4 +83,18 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1191410439148442}
+  m_Mesh: {fileID: 4300000, guid: 6072dc9d58d32274d85b7046224f013a, type: 3}
+--- !u!64 &64460395925548360
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1191410439148442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 6072dc9d58d32274d85b7046224f013a, type: 3}

@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4425411235686158}
   - component: {fileID: 33781144628800382}
   - component: {fileID: 23118465870492414}
+  - component: {fileID: 64136908720314650}
   m_Layer: 0
   m_Name: Blood_Dropper_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4425411235686158
 Transform:
@@ -34,9 +35,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1030534893211296}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8606222, y: 1.86, z: -10.494175}
-  m_LocalScale: {x: 0.0328084, y: 0.0328084, z: 0.0328084}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.07151555, y: 1.86, z: 0.36264563}
+  m_LocalScale: {x: 0.00082021, y: 0.0328084, z: 0.00082021}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,4 +83,18 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1030534893211296}
+  m_Mesh: {fileID: 4300000, guid: 77733855369568241876ebd3ccb7827f, type: 3}
+--- !u!64 &64136908720314650
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1030534893211296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 77733855369568241876ebd3ccb7827f, type: 3}

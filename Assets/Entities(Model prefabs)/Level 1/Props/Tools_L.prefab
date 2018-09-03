@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4186821911563898}
   - component: {fileID: 33279788047906652}
   - component: {fileID: 23388469806398572}
+  - component: {fileID: 64209299848515038}
   m_Layer: 0
   m_Name: Scissors1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1119086636791618
 GameObject:
@@ -38,12 +39,13 @@ GameObject:
   - component: {fileID: 4770311546127640}
   - component: {fileID: 33692443257139098}
   - component: {fileID: 23872616013570792}
+  - component: {fileID: 64419563787633026}
   m_Layer: 0
   m_Name: Knife2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1121424967584054
 GameObject:
@@ -55,12 +57,13 @@ GameObject:
   - component: {fileID: 4857915053211498}
   - component: {fileID: 33093681576940034}
   - component: {fileID: 23736959172817414}
+  - component: {fileID: 64367541401646812}
   m_Layer: 0
   m_Name: PIll_Bottle2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1179869795745236
 GameObject:
@@ -72,12 +75,13 @@ GameObject:
   - component: {fileID: 4246250789090158}
   - component: {fileID: 33478778599063338}
   - component: {fileID: 23598744777075620}
+  - component: {fileID: 64639086567938900}
   m_Layer: 0
   m_Name: Large_Syringe_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1244932491090892
 GameObject:
@@ -89,12 +93,13 @@ GameObject:
   - component: {fileID: 4870482557431144}
   - component: {fileID: 33176917074937192}
   - component: {fileID: 23124723463248418}
+  - component: {fileID: 64378220818935094}
   m_Layer: 0
   m_Name: Knife1_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1380973609792920
 GameObject:
@@ -106,12 +111,13 @@ GameObject:
   - component: {fileID: 4002995358440904}
   - component: {fileID: 33145227823298382}
   - component: {fileID: 23588557355701862}
+  - component: {fileID: 64985607374979890}
   m_Layer: 0
   m_Name: Medical_storageBox2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1411512331307460
 GameObject:
@@ -126,7 +132,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1537721877631900
 GameObject:
@@ -138,12 +144,13 @@ GameObject:
   - component: {fileID: 4593276091945178}
   - component: {fileID: 33932984677625106}
   - component: {fileID: 23085329171546130}
+  - component: {fileID: 64025404021556484}
   m_Layer: 0
   m_Name: Tweezer_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1613018257061852
 GameObject:
@@ -155,12 +162,13 @@ GameObject:
   - component: {fileID: 4502628828106878}
   - component: {fileID: 33962125384262674}
   - component: {fileID: 23388218066332692}
+  - component: {fileID: 64084140468659814}
   m_Layer: 0
   m_Name: PIll_Bottle3_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1699123467232090
 GameObject:
@@ -172,12 +180,13 @@ GameObject:
   - component: {fileID: 4616287498197154}
   - component: {fileID: 33577060166030230}
   - component: {fileID: 23662054685236712}
+  - component: {fileID: 64182823437239150}
   m_Layer: 0
   m_Name: StorageBox2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1764680642562758
 GameObject:
@@ -189,12 +198,13 @@ GameObject:
   - component: {fileID: 4059088574043454}
   - component: {fileID: 33312899950654698}
   - component: {fileID: 23288475417783798}
+  - component: {fileID: 64915985932288106}
   m_Layer: 0
   m_Name: PIll_Bottle_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1854918835595852
 GameObject:
@@ -206,12 +216,13 @@ GameObject:
   - component: {fileID: 4695059545869580}
   - component: {fileID: 33947098490398804}
   - component: {fileID: 23271338956521160}
+  - component: {fileID: 64508906270153536}
   m_Layer: 0
   m_Name: Scissors2_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1922542566049768
 GameObject:
@@ -223,12 +234,13 @@ GameObject:
   - component: {fileID: 4140831437222430}
   - component: {fileID: 33142011098273582}
   - component: {fileID: 23670032148843358}
+  - component: {fileID: 64211388592985392}
   m_Layer: 0
   m_Name: Syringe_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1987122344870030
 GameObject:
@@ -240,12 +252,13 @@ GameObject:
   - component: {fileID: 4835432988950594}
   - component: {fileID: 33417869973187314}
   - component: {fileID: 23540139711280600}
+  - component: {fileID: 64984057946426000}
   m_Layer: 0
   m_Name: Medical_storageBox_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4002995358440904
 Transform:
@@ -318,9 +331,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1411512331307460}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5719852, y: 1.35, z: -22.05}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.064299636, y: 1.35, z: 0.07375002}
+  m_LocalScale: {x: 0.025, y: 1, z: 0.025}
   m_Children:
   - {fileID: 4870482557431144}
   - {fileID: 4770311546127640}
@@ -988,3 +1001,185 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1613018257061852}
   m_Mesh: {fileID: 4300024, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64025404021556484
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537721877631900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64084140468659814
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1613018257061852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300024, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64182823437239150
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1699123467232090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300022, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64209299848515038
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060610855498766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300010, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64211388592985392
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1922542566049768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64367541401646812
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1121424967584054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300016, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64378220818935094
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244932491090892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300006, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64419563787633026
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119086636791618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300008, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64508906270153536
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854918835595852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300012, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64639086567938900
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1179869795745236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64915985932288106
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764680642562758}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300014, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64984057946426000
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987122344870030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300020, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
+--- !u!64 &64985607374979890
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1380973609792920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300018, guid: 6da35afcc6228164bbfd6c75ad916388, type: 3}
