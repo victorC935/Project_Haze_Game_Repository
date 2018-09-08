@@ -6,9 +6,18 @@ public class MalfunctioningLights : MonoBehaviour {
 
     public GameObject GameManager;
 
-    public float intensity;
+    float intensity;
+
     float onDelay;
     float offDelay;
+
+    float onMin = 0.15f;
+    [Range(0.15f, 30)]
+    public float onMax;
+
+    float offMin = 0.15f;
+    [Range(0.15f, 30)]
+    public float offMax;
 
     public bool canFlicker;
     public bool canIntensify;
@@ -54,16 +63,16 @@ public class MalfunctioningLights : MonoBehaviour {
         if (onDelay < 0f && offDelay > 0f)
         {
             gameObject.GetComponent<Light>().enabled = true;
-            onDelay = Random.Range(offDelay + 0.15f, 2);
+            onDelay = Random.Range(offDelay + onMin, offMax);
         }
         if (offDelay < 0f && onDelay > 0f)
         {
             gameObject.GetComponent<Light>().enabled = false;
-            offDelay = Random.Range(onDelay + 0.15f, 1);
+            offDelay = Random.Range(onDelay + offMin, onMax);
         }
 
         if (onDelay < -1 && offDelay < -1) { // Check if the script had skipped a tick because of framerate and fix the problem.
-            onDelay = Random.Range(offDelay + 0.15f, 2);
+            onDelay = Random.Range(offDelay + offMin, offMax * 2);
         }
         if ((onDelay <= 0.1f || offDelay <= 0.1f) && canIntensify) // Randomizes intensity
         {
