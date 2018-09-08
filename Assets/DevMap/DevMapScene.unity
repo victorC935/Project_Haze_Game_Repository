@@ -368,26 +368,9 @@ Prefab:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1526566173}
-    - target: {fileID: 114077775233096588, guid: ec6923ef11446054eb2eb6248adfa6ae,
-        type: 2}
-      propertyPath: canIntensify
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1992525880032688, guid: ec6923ef11446054eb2eb6248adfa6ae, type: 2}
       propertyPath: m_Name
       value: Malfunctioning light (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4789446711522320, guid: ec6923ef11446054eb2eb6248adfa6ae, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 4789446711522320, guid: ec6923ef11446054eb2eb6248adfa6ae, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.025000013
-      objectReference: {fileID: 0}
-    - target: {fileID: 4789446711522320, guid: ec6923ef11446054eb2eb6248adfa6ae, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec6923ef11446054eb2eb6248adfa6ae, type: 2}
@@ -787,6 +770,26 @@ Prefab:
     - target: {fileID: 4789446711522320, guid: ec6923ef11446054eb2eb6248adfa6ae, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114077775233096588, guid: ec6923ef11446054eb2eb6248adfa6ae,
+        type: 2}
+      propertyPath: onMin
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114077775233096588, guid: ec6923ef11446054eb2eb6248adfa6ae,
+        type: 2}
+      propertyPath: offMin
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114077775233096588, guid: ec6923ef11446054eb2eb6248adfa6ae,
+        type: 2}
+      propertyPath: onMax
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114077775233096588, guid: ec6923ef11446054eb2eb6248adfa6ae,
+        type: 2}
+      propertyPath: offMax
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec6923ef11446054eb2eb6248adfa6ae, type: 2}
