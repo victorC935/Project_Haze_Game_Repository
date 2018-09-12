@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1030534893211296}
+  m_RootGameObject: {fileID: 1637139826587708}
   m_IsPrefabParent: 1
---- !u!1 &1030534893211296
+--- !u!1 &1637139826587708
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4425411235686158}
-  - component: {fileID: 33781144628800382}
-  - component: {fileID: 23118465870492414}
-  - component: {fileID: 64136908720314650}
+  - component: {fileID: 4143156499196288}
+  - component: {fileID: 33677334995480200}
+  - component: {fileID: 23841925184582962}
+  - component: {fileID: 64244628998917012}
   m_Layer: 0
   m_Name: Blood_Dropper_L
   m_TagString: Untagged
@@ -29,25 +29,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &4425411235686158
+--- !u!4 &4143156499196288
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030534893211296}
+  m_GameObject: {fileID: 1637139826587708}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07151555, y: 1.86, z: 0.36264563}
-  m_LocalScale: {x: 0.00082021, y: 0.0328084, z: 0.00082021}
+  m_LocalPosition: {x: -18.320911, y: 6.914764, z: 8.335016}
+  m_LocalScale: {x: 0.0328084, y: 0.0328084, z: 0.0328084}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23118465870492414
+--- !u!23 &23841925184582962
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030534893211296}
+  m_GameObject: {fileID: 1637139826587708}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -77,19 +77,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33781144628800382
+--- !u!33 &33677334995480200
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030534893211296}
+  m_GameObject: {fileID: 1637139826587708}
   m_Mesh: {fileID: 4300000, guid: 77733855369568241876ebd3ccb7827f, type: 3}
---- !u!64 &64136908720314650
+--- !u!64 &64244628998917012
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1030534893211296}
+  m_GameObject: {fileID: 1637139826587708}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
