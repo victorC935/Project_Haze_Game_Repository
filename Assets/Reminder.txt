@@ -1,3 +1,0 @@
-Wolf
--Expect the unexpected from players
--Polish the interaction script regarding the door controls
